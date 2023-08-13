@@ -7,6 +7,7 @@ class TestSearch(unittest.TestCase):
     @patch("jetphotos.search.requests.get")
     def test_aircraft(self, mock_get):
         mock_response = mock_get.return_value
+
         mock_response.content = b"<html>"
         mock_response.content += b'<div class="result__section result__section--photo-wrapper">'
         mock_response.content += b'<img src="//example.com/photo.jpg">'

@@ -15,9 +15,10 @@ pip install -e git+https://github.com/primeflight/jetphotos.git@main#egg=jetphot
 ```python
 from jetphotos.search import Search
 
-url_photo = Search.aircraft(prefix="PT-RVT")
+links = Search.aircraft(prefix="PT-RVT")
 
-print(url_photo)
+for link in links:
+    print(link)
 ```
 
 Output
