@@ -18,7 +18,3 @@ class TestSearch(unittest.TestCase):
         expected_url = "https://example.com/photo.jpg"
 
         self.assertEqual(result_url, expected_url)
-
-
-if __name__ == "__main__":
-    unittest.main()
